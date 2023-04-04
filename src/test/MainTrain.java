@@ -164,11 +164,14 @@ public class MainTrain {
 	}
 	
 	public static void main(String[] args) {
-		if(testServer()) {
-			testDM();
-			testBSCH();			
-		}
 		System.out.println("done");
+
+		if(testServer()) {
+			//testDM();
+			//testBSCH();
+			System.out.println("done");
+		}
+		
 	}
 
 }
