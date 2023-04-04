@@ -42,6 +42,8 @@ public class MyServer {
 	}catch(IOException e) {
 		e.printStackTrace();
 		}
+	}
+
 	public void close()
 	{
 		stop=true;
