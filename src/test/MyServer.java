@@ -7,11 +7,11 @@ import java.net.SocketTimeoutException;
 
 public class MyServer {
 	int port;
-	int numOfThreads;
 	ClientHandler ch;
+	int numOfThreads;
 	boolean stop;
 	
-	MyServer(int port, int numOfThreads, ClientHandler ch)
+	MyServer(int port,ClientHandler ch, int numOfThreads)
 	{
 		this.port=port;
 		this.numOfThreads=numOfThreads;
@@ -42,8 +42,6 @@ public class MyServer {
 	}catch(IOException e) {
 		e.printStackTrace();
 		}
-	}
-
 	public void close()
 	{
 		stop=true;
